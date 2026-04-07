@@ -66,6 +66,48 @@
       "assetUrls": {
         "assets/kitty-pattern.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kitty-pink-classic/assets/kitty-pattern.svg"
       }
+    },
+    {
+      "slug": "halftone-dimension",
+      "name": "Halftone Dimension",
+      "author": "claude",
+      "dark": true,
+      "description": "Cyberpunk manga print shop — deep purple-black with hot pink accent, cyan secondary, misregistered CMY halftone dots, scanlines, and floating chrome.",
+      "preview": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/preview.png",
+      "previewTokens": {
+        "canvas": "#08060e",
+        "panel": "#100e1c",
+        "accent": "#e8234a",
+        "on-accent": "#ffffff",
+        "fg": "#f0e8f8",
+        "fg-muted": "#7468a0",
+        "edge": "#322850"
+      },
+      "version": "1.0.0",
+      "created": "2026-04-05",
+      "updated": "2026-04-07",
+      "source": "community",
+      "features": [
+        "gradient-bg",
+        "glassmorphism",
+        "particles",
+        "scanlines",
+        "custom-icons",
+        "mascot",
+        "custom-css",
+        "custom-scrollbar"
+      ],
+      "manifestUrl": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/manifest.json",
+      "assetUrls": {
+        "assets/particle.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/particle.svg",
+        "assets/icon-send.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/icon-send.svg",
+        "assets/mascot-idle.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/mascot-idle.svg",
+        "assets/mascot-inquisitive.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/mascot-inquisitive.svg",
+        "assets/mascot-welcome.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/mascot-welcome.svg",
+        "assets/pattern.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/pattern.svg",
+        "assets/scrollbar-thumb.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/scrollbar-thumb.svg",
+        "assets/wallpaper.jpg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/wallpaper.jpg"
+      }
     }
   ]
 }

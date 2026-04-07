@@ -74,12 +74,21 @@ def build_registry():
         author = manifest.get("author", "unknown")
         source = "destinclaude" if author in OFFICIAL_AUTHORS else "community"
 
+        # Extract preview tokens (subset of colors for CSS-based card previews)
+        tokens = manifest.get("tokens", {})
+        preview_tokens = {
+            k: tokens[k]
+            for k in ("canvas", "panel", "accent", "on-accent", "fg", "fg-muted", "edge")
+            if k in tokens
+        }
+
         entry = {
             "slug": slug,
             "name": manifest.get("name", slug),
             "author": author,
             "dark": manifest.get("dark", False),
             "description": manifest.get("description"),
+            "previewTokens": preview_tokens if len(preview_tokens) >= 5 else None,
             "version": manifest.get("version", "1.0.0"),
             "created": manifest.get("created"),
             "updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),

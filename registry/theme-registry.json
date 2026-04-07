@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-07T02:47:52.896566+00:00",
+  "generatedAt": "2026-04-07T03:17:28.795968+00:00",
   "themes": [
     {
       "slug": "golden-sunbreak",
@@ -8,6 +8,15 @@
       "author": "itsdestin",
       "dark": true,
       "description": "Weathering With You — Tokyo bathed in god-ray light. Deep violet-black panels, warm amber gold, soft dust-mote particles.",
+      "previewTokens": {
+        "canvas": "#08080e",
+        "panel": "#140e1a",
+        "accent": "#ffc030",
+        "on-accent": "#000000",
+        "fg": "#f8e8c8",
+        "fg-muted": "#806840",
+        "edge": "#281e10"
+      },
       "version": "1.0.0",
       "created": "2026-03-28",
       "updated": "2026-04-07",
@@ -23,12 +32,12 @@
       "manifestUrl": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/manifest.json",
       "assetUrls": {
         "assets/dust.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/dust.svg",
-        "assets/mascot-welcome.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/mascot-welcome.svg",
-        "assets/pattern.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/pattern.svg",
+        "assets/icon-send.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/icon-send.svg",
         "assets/mascot-idle.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/mascot-idle.svg",
         "assets/mascot-inquisitive.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/mascot-inquisitive.svg",
-        "assets/wallpaper.jpg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/wallpaper.jpg",
-        "assets/icon-send.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/icon-send.svg"
+        "assets/mascot-welcome.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/mascot-welcome.svg",
+        "assets/pattern.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/pattern.svg",
+        "assets/wallpaper.jpg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/wallpaper.jpg"
       }
     },
     {
@@ -37,6 +46,15 @@
       "author": "claude",
       "dark": false,
       "description": "A soft pastel pink theme inspired by Hello Kitty. Pill-shaped chat bubbles, rounded corners, and a subtle repeating kitty silhouette pattern.",
+      "previewTokens": {
+        "canvas": "#F8E0EA",
+        "panel": "#FFFFFF",
+        "accent": "#FF69B4",
+        "on-accent": "#FFFFFF",
+        "fg": "#3B0A1F",
+        "fg-muted": "#9E6080",
+        "edge": "#F48FB1"
+      },
       "version": "1.0.0",
       "created": "2026-04-05",
       "updated": "2026-04-07",

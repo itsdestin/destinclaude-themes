@@ -11,7 +11,7 @@
     "inset": "#FFF5F8",
     "well": "#FCE4EC",
     "accent": "#FF69B4",
-    "on-accent": "#FFFFFF",
+    "on-accent": "#000000",
     "fg": "#3B0A1F",
     "fg-2": "#5D2040",
     "fg-dim": "#7B3A5E",
@@ -51,5 +51,6 @@
     "scan-lines": false,
     "vignette": 0,
     "noise": 0
-  }
+  },
+  "custom_css": "::selection { background: rgba(255, 105, 180, 0.3); color: #000000; }\n\nbody::after { content: ''; position: fixed; inset: 0; background-image: url('theme-asset://kitty-pink-classic/assets/kitty-pattern.svg'); background-size: 30px 30px; background-repeat: repeat; opacity: 0.035; pointer-events: none; z-index: 0; }"
 }

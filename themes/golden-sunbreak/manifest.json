@@ -34,6 +34,7 @@
   "background": {
     "type": "image",
     "value": "assets/wallpaper.jpg",
+    "terminal-value": "assets/wallpaper-terminal.webp",
     "opacity": 0.98,
     "panels-blur": 18,
     "panels-opacity": 0.72,

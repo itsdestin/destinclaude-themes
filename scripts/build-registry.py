@@ -129,6 +129,12 @@ def build_registry():
             "features": detect_features(manifest),
             "manifestUrl": f"{REPO_BASE}/themes/{slug}/manifest.json",
             "assetUrls": collect_asset_urls(slug, theme_dir, manifest),
+            # Propagated from the author's manifest.json. Used by DestinCode's
+            # theme-publish-state resolver to detect whether a locally-edited
+            # theme has drifted from its published registry entry. Legacy
+            # entries missing this field are treated as "matching" by the app,
+            # so no backfill is required.
+            "contentHash": manifest.get("contentHash"),
         }
 
         themes.append(entry)

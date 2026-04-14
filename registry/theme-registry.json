@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-14T07:22:10.630263+00:00",
+  "generatedAt": "2026-04-14T07:40:12.598364+00:00",
   "themes": [
     {
       "slug": "devils-garden",
@@ -144,7 +144,15 @@
         "custom-css"
       ],
       "manifestUrl": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/manifest.json",
-      "assetUrls": {},
+      "assetUrls": {
+        "assets/mascot-dizzy.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/assets/mascot-dizzy.svg",
+        "assets/mascot-idle.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/assets/mascot-idle.svg",
+        "assets/mascot-shocked.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/assets/mascot-shocked.svg",
+        "assets/mascot-welcome.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/assets/mascot-welcome.svg",
+        "assets/pattern.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/assets/pattern.svg",
+        "assets/wallpaper-terminal.webp": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/assets/wallpaper-terminal.webp",
+        "assets/wallpaper.webp": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/assets/wallpaper.webp"
+      },
       "contentHash": null
     },
     {
@@ -176,7 +184,15 @@
         "custom-css"
       ],
       "manifestUrl": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/manifest.json",
-      "assetUrls": {},
+      "assetUrls": {
+        "assets/mascot-dizzy.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/assets/mascot-dizzy.svg",
+        "assets/mascot-idle.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/assets/mascot-idle.svg",
+        "assets/mascot-shocked.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/assets/mascot-shocked.svg",
+        "assets/mascot-welcome.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/assets/mascot-welcome.svg",
+        "assets/pattern.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/assets/pattern.svg",
+        "assets/wallpaper-terminal.webp": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/assets/wallpaper-terminal.webp",
+        "assets/wallpaper.png": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/assets/wallpaper.png"
+      },
       "contentHash": null
     }
   ]

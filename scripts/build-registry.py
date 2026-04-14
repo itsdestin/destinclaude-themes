@@ -44,12 +44,23 @@ def detect_features(manifest: dict) -> list[str]:
 
 def extract_manifest_assets(manifest: dict) -> set[str]:
     """Extract all asset paths referenced in the manifest."""
-    # Collect every value that looks like a relative asset path (assets/...)
+    # Collect every value that looks like a relative asset path (assets/...).
+    # Also normalize theme-asset://<slug>/assets/... URIs to their relative
+    # form — validate-theme.yml rejects these at PR time, but this backstop
+    # ensures a bad manifest that slips through still produces correct
+    # assetUrls instead of a silently empty map.
+    slug = manifest.get("slug", "")
+    theme_asset_prefix = f"theme-asset://{slug}/" if slug else None
     refs = set()
 
     def walk(obj):
-        if isinstance(obj, str) and obj.startswith("assets/"):
-            refs.add(obj)
+        if isinstance(obj, str):
+            if obj.startswith("assets/"):
+                refs.add(obj)
+            elif theme_asset_prefix and obj.startswith(theme_asset_prefix):
+                rel = obj[len(theme_asset_prefix):]
+                if rel.startswith("assets/"):
+                    refs.add(rel)
         elif isinstance(obj, dict):
             for v in obj.values():
                 walk(v)

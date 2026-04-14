@@ -66,6 +66,40 @@ jobs:
           "
           done
 
+      - name: Reject fully-resolved theme-asset:// URIs in manifest
+        # Asset paths must be relative (e.g. "assets/wallpaper.png"). The app's
+        # resolveAllAssetPaths() rewrites them to theme-asset:// URIs at load time.
+        # Fully-resolved URIs bypass build-registry.py's asset collector, so
+        # registry ships with empty assetUrls and images never download. custom_css
+        # is exempt — raw CSS legitimately uses theme-asset://.
+        run: |
+          for slug in ${{ steps.changed.outputs.themes }}; do
+            MANIFEST="themes/$slug/manifest.json"
+            if [ ! -f "$MANIFEST" ]; then continue; fi
+            python3 -c "
+          import json, sys
+          m = json.load(open('$MANIFEST'))
+          bad = []
+          def walk(obj, path=''):
+              if isinstance(obj, str):
+                  if obj.startswith('theme-asset://'):
+                      bad.append((path, obj))
+              elif isinstance(obj, dict):
+                  for k, v in obj.items():
+                      if k == 'custom_css': continue
+                      walk(v, f'{path}.{k}' if path else k)
+              elif isinstance(obj, list):
+                  for i, v in enumerate(obj):
+                      walk(v, f'{path}[{i}]')
+          walk(m)
+          if bad:
+              for p, v in bad:
+                  print(f'::error::$MANIFEST field {p!r} uses theme-asset:// URI ({v!r}) — use a relative path like \"assets/name.ext\" instead')
+              sys.exit(1)
+          print(f'✓ $slug — no fully-resolved theme-asset:// URIs in manifest')
+          "
+          done
+
       - name: Check manifest asset references exist
         run: |
           for slug in ${{ steps.changed.outputs.themes }}; do

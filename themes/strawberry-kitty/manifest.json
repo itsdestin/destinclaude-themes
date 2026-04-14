@@ -35,14 +35,14 @@
   },
   "background": {
     "type": "image",
-    "value": "theme-asset://strawberry-kitty/assets/wallpaper.png",
-    "terminal-value": "theme-asset://strawberry-kitty/assets/wallpaper-terminal.webp",
+    "value": "assets/wallpaper.png",
+    "terminal-value": "assets/wallpaper-terminal.webp",
     "opacity": 1,
     "panels-blur": 4,
     "panels-opacity": 0.3,
     "bubble-blur": 13,
     "bubble-opacity": 0.68,
-    "pattern": "theme-asset://strawberry-kitty/assets/pattern.svg",
+    "pattern": "assets/pattern.svg",
     "pattern-opacity": 0.06
   },
   "layout": {
@@ -65,10 +65,10 @@
     "noise": 0
   },
   "mascot": {
-    "idle": "theme-asset://strawberry-kitty/assets/mascot-idle.svg",
-    "welcome": "theme-asset://strawberry-kitty/assets/mascot-welcome.svg",
-    "shocked": "theme-asset://strawberry-kitty/assets/mascot-shocked.svg",
-    "dizzy": "theme-asset://strawberry-kitty/assets/mascot-dizzy.svg"
+    "idle": "assets/mascot-idle.svg",
+    "welcome": "assets/mascot-welcome.svg",
+    "shocked": "assets/mascot-shocked.svg",
+    "dizzy": "assets/mascot-dizzy.svg"
   },
   "custom_css": "::selection { background: rgba(217,78,107,0.32); color: #FFFFFF; }\nbody::after { content: ''; position: fixed; inset: 0; background-image: url('theme-asset://strawberry-kitty/assets/pattern.svg'); background-size: 40px 40px; background-repeat: repeat; opacity: 0.06; pointer-events: none; z-index: 0; }"
 }

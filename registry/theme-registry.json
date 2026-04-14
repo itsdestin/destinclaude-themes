@@ -1,7 +1,40 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-10T08:52:22.983067+00:00",
+  "generatedAt": "2026-04-14T07:22:10.630263+00:00",
   "themes": [
+    {
+      "slug": "devils-garden",
+      "name": "Devil's Garden",
+      "author": "claude",
+      "dark": true,
+      "description": null,
+      "preview": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/devils-garden/preview.png",
+      "previewTokens": {
+        "canvas": "#140810",
+        "panel": "#221020",
+        "accent": "#FFC627",
+        "on-accent": "#140810",
+        "fg": "#F2E0C0",
+        "fg-muted": "#8C7858",
+        "edge": "#7A3048"
+      },
+      "version": "1.0.0",
+      "created": "2026-04-12",
+      "updated": "2026-04-14",
+      "source": "community",
+      "features": [
+        "wallpaper",
+        "glassmorphism",
+        "particles",
+        "custom-font",
+        "custom-css"
+      ],
+      "manifestUrl": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/devils-garden/manifest.json",
+      "assetUrls": {
+        "assets/wallpaper.jpg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/devils-garden/assets/wallpaper.jpg"
+      },
+      "contentHash": "sha256:fb2a7a0b1bc9e20f595d35314feb6a2ff4e593043669933faab0c30f8682a6fa"
+    },
     {
       "slug": "golden-sunbreak",
       "name": "Golden Sunbreak",
@@ -20,7 +53,7 @@
       },
       "version": "1.0.0",
       "created": "2026-03-28",
-      "updated": "2026-04-10",
+      "updated": "2026-04-14",
       "source": "destinclaude",
       "features": [
         "wallpaper",
@@ -38,8 +71,10 @@
         "assets/mascot-inquisitive.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/mascot-inquisitive.svg",
         "assets/mascot-welcome.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/mascot-welcome.svg",
         "assets/pattern.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/pattern.svg",
+        "assets/wallpaper-terminal.webp": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/wallpaper-terminal.webp",
         "assets/wallpaper.jpg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/wallpaper.jpg"
-      }
+      },
+      "contentHash": null
     },
     {
       "slug": "halftone-dimension",
@@ -47,7 +82,7 @@
       "author": "claude",
       "dark": true,
       "description": "Cyberpunk manga print shop — deep purple-black with hot pink accent, cyan secondary, misregistered CMY halftone dots, scanlines, and floating chrome.",
-      "preview": null,
+      "preview": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/preview.png",
       "previewTokens": {
         "canvas": "#08060e",
         "panel": "#100e1c",
@@ -59,7 +94,7 @@
       },
       "version": "1.0.0",
       "created": "2026-04-05",
-      "updated": "2026-04-10",
+      "updated": "2026-04-14",
       "source": "community",
       "features": [
         "glassmorphism",
@@ -77,7 +112,72 @@
         "assets/particle.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/particle.svg",
         "assets/pattern.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/pattern.svg",
         "assets/scrollbar-thumb.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/scrollbar-thumb.svg"
-      }
+      },
+      "contentHash": null
+    },
+    {
+      "slug": "kuromi-dreamer",
+      "name": "Kuromi Dreamer",
+      "author": "claude",
+      "dark": false,
+      "description": "Darker purple Hello Kitty x Kuromi crossover — lavender dusk, floating chrome, pill bubbles, dust drift over a pastel gothic wallpaper.",
+      "preview": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/preview.png",
+      "previewTokens": {
+        "canvas": "#C9B8E0",
+        "panel": "#D4C5E6",
+        "accent": "#8158ad",
+        "on-accent": "#FFFFFF",
+        "fg": "#1A0F28",
+        "fg-muted": "#7E6899",
+        "edge": "#8466A8"
+      },
+      "version": "1.0.0",
+      "created": "2026-04-12",
+      "updated": "2026-04-14",
+      "source": "community",
+      "features": [
+        "wallpaper",
+        "glassmorphism",
+        "particles",
+        "custom-font",
+        "mascot",
+        "custom-css"
+      ],
+      "manifestUrl": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/manifest.json",
+      "assetUrls": {},
+      "contentHash": null
+    },
+    {
+      "slug": "strawberry-kitty",
+      "name": "Strawberry Kitty",
+      "author": "claude",
+      "dark": false,
+      "description": "Lighter pink Hello Kitty x strawberry shortcake — pastel rose canvas, floating chrome, pill bubbles, dust drift over a sweet berry wallpaper.",
+      "preview": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/preview.png",
+      "previewTokens": {
+        "canvas": "#F8D7DE",
+        "panel": "#FCE4E9",
+        "accent": "#D94E6B",
+        "on-accent": "#FFFFFF",
+        "fg": "#3A1420",
+        "fg-muted": "#A3627A",
+        "edge": "#E09AA8"
+      },
+      "version": "1.0.0",
+      "created": "2026-04-12",
+      "updated": "2026-04-14",
+      "source": "community",
+      "features": [
+        "wallpaper",
+        "glassmorphism",
+        "particles",
+        "custom-font",
+        "mascot",
+        "custom-css"
+      ],
+      "manifestUrl": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/manifest.json",
+      "assetUrls": {},
+      "contentHash": null
     }
   ]
 }

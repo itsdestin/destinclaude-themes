@@ -5,6 +5,10 @@ on:
     branches: [main]
     paths:
       - 'themes/**'
+  # Allow manual re-runs (e.g. after fixing a CI regression that left the
+  # registry stale, as happened April 2026 when three themes missed the
+  # rebuild due to a missing npm install step).
+  workflow_dispatch:
 
 jobs:
   rebuild:

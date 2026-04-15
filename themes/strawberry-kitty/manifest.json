@@ -70,5 +70,5 @@
     "shocked": "assets/mascot-shocked.svg",
     "dizzy": "assets/mascot-dizzy.svg"
   },
-  "custom_css": "::selection { background: rgba(217,78,107,0.32); color: #FFFFFF; }\nbody::after { content: ''; position: fixed; inset: 0; background-image: url('theme-asset://strawberry-kitty/assets/pattern.svg'); background-size: 40px 40px; background-repeat: repeat; opacity: 0.06; pointer-events: none; z-index: 0; }"
+  "custom_css": "::selection { background: rgba(217,78,107,0.32); color: #FFFFFF; }"
 }

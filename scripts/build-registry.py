@@ -10,9 +10,9 @@ from datetime import datetime, timezone
 
 THEMES_DIR = "themes"
 REGISTRY_PATH = "registry/theme-registry.json"
-REPO_BASE = "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main"
+REPO_BASE = "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main"
 
-# Official themes (source: destinclaude) — maintained by itsdestin
+# Official themes (source: youcoded-core) — maintained by itsdestin
 OFFICIAL_AUTHORS = {"itsdestin"}
 
 
@@ -107,7 +107,7 @@ def build_registry():
             manifest = json.load(f)
 
         author = manifest.get("author", "unknown")
-        source = "destinclaude" if author in OFFICIAL_AUTHORS else "community"
+        source = "youcoded-core" if author in OFFICIAL_AUTHORS else "community"
 
         # Extract preview tokens (subset of colors for CSS-based card previews)
         tokens = manifest.get("tokens", {})
@@ -140,7 +140,7 @@ def build_registry():
             "features": detect_features(manifest),
             "manifestUrl": f"{REPO_BASE}/themes/{slug}/manifest.json",
             "assetUrls": collect_asset_urls(slug, theme_dir, manifest),
-            # Propagated from the author's manifest.json. Used by DestinCode's
+            # Propagated from the author's manifest.json. Used by YouCoded's
             # theme-publish-state resolver to detect whether a locally-edited
             # theme has drifted from its published registry entry. Legacy
             # entries missing this field are treated as "matching" by the app,

@@ -39,7 +39,7 @@ Optional but recommended:
 - **Slug must be unique** — check existing themes before submitting
 - Theme must pass the CI validation checks automatically
 
-### Publishing from DestinCode
+### Publishing from YouCoded
 
 You can also publish directly from the app:
 1. Create a theme using the theme builder or customizer

@@ -8,7 +8,7 @@
       "author": "claude",
       "dark": true,
       "description": null,
-      "preview": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/devils-garden/preview.png",
+      "preview": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/devils-garden/preview.png",
       "previewTokens": {
         "canvas": "#140810",
         "panel": "#221020",
@@ -29,9 +29,9 @@
         "custom-font",
         "custom-css"
       ],
-      "manifestUrl": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/devils-garden/manifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/devils-garden/manifest.json",
       "assetUrls": {
-        "assets/wallpaper.jpg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/devils-garden/assets/wallpaper.jpg"
+        "assets/wallpaper.jpg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/devils-garden/assets/wallpaper.jpg"
       },
       "contentHash": "sha256:fb2a7a0b1bc9e20f595d35314feb6a2ff4e593043669933faab0c30f8682a6fa"
     },
@@ -41,7 +41,7 @@
       "author": "itsdestin",
       "dark": true,
       "description": "Weathering With You — Tokyo bathed in god-ray light. Deep violet-black panels, warm amber gold, soft dust-mote particles.",
-      "preview": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/preview.png",
+      "preview": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/golden-sunbreak/preview.png",
       "previewTokens": {
         "canvas": "#08080e",
         "panel": "#140e1a",
@@ -54,7 +54,7 @@
       "version": "1.0.0",
       "created": "2026-03-28",
       "updated": "2026-04-15",
-      "source": "destinclaude",
+      "source": "youcoded-core",
       "features": [
         "wallpaper",
         "glassmorphism",
@@ -63,16 +63,16 @@
         "mascot",
         "custom-css"
       ],
-      "manifestUrl": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/manifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/golden-sunbreak/manifest.json",
       "assetUrls": {
-        "assets/dust.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/dust.svg",
-        "assets/icon-send.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/icon-send.svg",
-        "assets/mascot-idle.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/mascot-idle.svg",
-        "assets/mascot-inquisitive.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/mascot-inquisitive.svg",
-        "assets/mascot-welcome.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/mascot-welcome.svg",
-        "assets/pattern.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/pattern.svg",
-        "assets/wallpaper-terminal.webp": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/wallpaper-terminal.webp",
-        "assets/wallpaper.jpg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/golden-sunbreak/assets/wallpaper.jpg"
+        "assets/dust.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/golden-sunbreak/assets/dust.svg",
+        "assets/icon-send.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/golden-sunbreak/assets/icon-send.svg",
+        "assets/mascot-idle.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/golden-sunbreak/assets/mascot-idle.svg",
+        "assets/mascot-inquisitive.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/golden-sunbreak/assets/mascot-inquisitive.svg",
+        "assets/mascot-welcome.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/golden-sunbreak/assets/mascot-welcome.svg",
+        "assets/pattern.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/golden-sunbreak/assets/pattern.svg",
+        "assets/wallpaper-terminal.webp": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/golden-sunbreak/assets/wallpaper-terminal.webp",
+        "assets/wallpaper.jpg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/golden-sunbreak/assets/wallpaper.jpg"
       },
       "contentHash": null
     },
@@ -82,7 +82,7 @@
       "author": "claude",
       "dark": true,
       "description": "Cyberpunk manga print shop — deep purple-black with hot pink accent, cyan secondary, misregistered CMY halftone dots, scanlines, and floating chrome.",
-      "preview": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/preview.png",
+      "preview": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/halftone-dimension/preview.png",
       "previewTokens": {
         "canvas": "#08060e",
         "panel": "#100e1c",
@@ -103,15 +103,15 @@
         "mascot",
         "custom-css"
       ],
-      "manifestUrl": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/manifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/halftone-dimension/manifest.json",
       "assetUrls": {
-        "assets/icon-send.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/icon-send.svg",
-        "assets/mascot-idle.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/mascot-idle.svg",
-        "assets/mascot-inquisitive.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/mascot-inquisitive.svg",
-        "assets/mascot-welcome.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/mascot-welcome.svg",
-        "assets/particle.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/particle.svg",
-        "assets/pattern.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/pattern.svg",
-        "assets/scrollbar-thumb.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/halftone-dimension/assets/scrollbar-thumb.svg"
+        "assets/icon-send.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/halftone-dimension/assets/icon-send.svg",
+        "assets/mascot-idle.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/halftone-dimension/assets/mascot-idle.svg",
+        "assets/mascot-inquisitive.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/halftone-dimension/assets/mascot-inquisitive.svg",
+        "assets/mascot-welcome.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/halftone-dimension/assets/mascot-welcome.svg",
+        "assets/particle.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/halftone-dimension/assets/particle.svg",
+        "assets/pattern.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/halftone-dimension/assets/pattern.svg",
+        "assets/scrollbar-thumb.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/halftone-dimension/assets/scrollbar-thumb.svg"
       },
       "contentHash": null
     },
@@ -121,7 +121,7 @@
       "author": "claude",
       "dark": false,
       "description": "Darker purple Hello Kitty x Kuromi crossover — lavender dusk, floating chrome, pill bubbles, dust drift over a pastel gothic wallpaper.",
-      "preview": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/preview.png",
+      "preview": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/kuromi-dreamer/preview.png",
       "previewTokens": {
         "canvas": "#C9B8E0",
         "panel": "#D4C5E6",
@@ -143,15 +143,15 @@
         "mascot",
         "custom-css"
       ],
-      "manifestUrl": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/manifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/kuromi-dreamer/manifest.json",
       "assetUrls": {
-        "assets/mascot-dizzy.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/assets/mascot-dizzy.svg",
-        "assets/mascot-idle.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/assets/mascot-idle.svg",
-        "assets/mascot-shocked.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/assets/mascot-shocked.svg",
-        "assets/mascot-welcome.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/assets/mascot-welcome.svg",
-        "assets/pattern.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/assets/pattern.svg",
-        "assets/wallpaper-terminal.webp": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/assets/wallpaper-terminal.webp",
-        "assets/wallpaper.webp": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/kuromi-dreamer/assets/wallpaper.webp"
+        "assets/mascot-dizzy.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/kuromi-dreamer/assets/mascot-dizzy.svg",
+        "assets/mascot-idle.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/kuromi-dreamer/assets/mascot-idle.svg",
+        "assets/mascot-shocked.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/kuromi-dreamer/assets/mascot-shocked.svg",
+        "assets/mascot-welcome.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/kuromi-dreamer/assets/mascot-welcome.svg",
+        "assets/pattern.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/kuromi-dreamer/assets/pattern.svg",
+        "assets/wallpaper-terminal.webp": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/kuromi-dreamer/assets/wallpaper-terminal.webp",
+        "assets/wallpaper.webp": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/kuromi-dreamer/assets/wallpaper.webp"
       },
       "contentHash": null
     },
@@ -161,7 +161,7 @@
       "author": "claude",
       "dark": false,
       "description": "Lighter pink Hello Kitty x strawberry shortcake — pastel rose canvas, floating chrome, pill bubbles, dust drift over a sweet berry wallpaper.",
-      "preview": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/preview.png",
+      "preview": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/strawberry-kitty/preview.png",
       "previewTokens": {
         "canvas": "#F8D7DE",
         "panel": "#FCE4E9",
@@ -183,15 +183,15 @@
         "mascot",
         "custom-css"
       ],
-      "manifestUrl": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/manifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/strawberry-kitty/manifest.json",
       "assetUrls": {
-        "assets/mascot-dizzy.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/assets/mascot-dizzy.svg",
-        "assets/mascot-idle.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/assets/mascot-idle.svg",
-        "assets/mascot-shocked.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/assets/mascot-shocked.svg",
-        "assets/mascot-welcome.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/assets/mascot-welcome.svg",
-        "assets/pattern.svg": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/assets/pattern.svg",
-        "assets/wallpaper-terminal.webp": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/assets/wallpaper-terminal.webp",
-        "assets/wallpaper.png": "https://raw.githubusercontent.com/itsdestin/destinclaude-themes/main/themes/strawberry-kitty/assets/wallpaper.png"
+        "assets/mascot-dizzy.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/strawberry-kitty/assets/mascot-dizzy.svg",
+        "assets/mascot-idle.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/strawberry-kitty/assets/mascot-idle.svg",
+        "assets/mascot-shocked.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/strawberry-kitty/assets/mascot-shocked.svg",
+        "assets/mascot-welcome.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/strawberry-kitty/assets/mascot-welcome.svg",
+        "assets/pattern.svg": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/strawberry-kitty/assets/pattern.svg",
+        "assets/wallpaper-terminal.webp": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/strawberry-kitty/assets/wallpaper-terminal.webp",
+        "assets/wallpaper.png": "https://raw.githubusercontent.com/itsdestin/wecoded-themes/main/themes/strawberry-kitty/assets/wallpaper.png"
       },
       "contentHash": null
     }

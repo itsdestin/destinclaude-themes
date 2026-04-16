@@ -2,7 +2,7 @@
 /**
  * Generates preview.png for each theme using Playwright (headless Chromium).
  *
- * Renders a mock DestinCode UI with the theme's tokens, wallpaper, pattern,
+ * Renders a mock YouCoded UI with the theme's tokens, wallpaper, pattern,
  * glassmorphism, custom CSS, and layout styles applied. Saves to
  * themes/<slug>/preview.png.
  *

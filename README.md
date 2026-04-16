@@ -1,6 +1,6 @@
-# DestinCode Themes
+# YouCoded Themes
 
-Community theme registry for [DestinCode](https://github.com/itsdestin/destincode).
+Community theme registry for [YouCoded](https://github.com/itsdestin/youcoded).
 
 Create custom themes with colors, wallpapers, particle effects, and mascot characters — then share them with the community. Browse and install themes from within the app via **Settings > Themes > Browse Theme Marketplace**.
 
@@ -14,7 +14,7 @@ Create custom themes with colors, wallpapers, particle effects, and mascot chara
 
 ## Creating a Theme
 
-Use `/theme-builder` inside DestinCode to generate a theme pack from a description, or create one manually:
+Use `/theme-builder` inside YouCoded to generate a theme pack from a description, or create one manually:
 
 1. Create a folder at `themes/<your-slug>/`
 2. Add a `manifest.json` with your colors and metadata
@@ -25,4 +25,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full spec and validation requirem
 
 ## Publishing from the App
 
-In DestinCode: **Settings > Themes > Publish to Marketplace** — creates the PR automatically.
+In YouCoded: **Settings > Themes > Publish to Marketplace** — creates the PR automatically.

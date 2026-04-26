@@ -9,6 +9,11 @@ on:
   # registry stale, as happened April 2026 when three themes missed the
   # rebuild due to a missing npm install step).
   workflow_dispatch:
+    inputs:
+      force_regenerate:
+        description: 'Force-regenerate all theme previews (overrides skip-when-exists)'
+        required: false
+        default: 'false'
 
 jobs:
   rebuild:
@@ -36,6 +41,11 @@ jobs:
         run: npx playwright install chromium --with-deps
 
       - name: Generate theme previews
+        # On push-triggered runs, github.event.inputs.force_regenerate is empty
+        # string, so the conditional evaluates to '0' and skip-when-fresh is active.
+        # Only a manual workflow_dispatch with force_regenerate=true forces a sweep.
+        env:
+          FORCE_REGENERATE_PREVIEWS: ${{ github.event.inputs.force_regenerate == 'true' && '1' || '0' }}
         run: node scripts/generate-previews.js
 
       - name: Rebuild registry

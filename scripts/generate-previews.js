@@ -8,14 +8,62 @@
  *
  * Usage:
  *   npx playwright install chromium
- *   node scripts/generate-previews.js [slug]   # specific theme, or all if omitted
+ *   node scripts/generate-previews.js [slug]                    # specific theme, or all if omitted
+ *   node scripts/generate-previews.js [slug] --themes-dir <path>  # override themes directory
+ *   node scripts/generate-previews.js [slug] --themes-dir=<path>  # equals-sign form also accepted
  */
 
 const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 
-const THEMES_DIR = path.join(__dirname, '..', 'themes');
+// Default themes directory — used by CI and bare local invocations.
+// Override with --themes-dir <path> for local theme builders pointing at
+// ~/.claude/wecoded-themes or any other out-of-repo location.
+const DEFAULT_THEMES_DIR = path.join(__dirname, '..', 'themes');
+
+/**
+ * Expand a leading ~ to the user's home directory.
+ * The shell expands ~ in the space-separated form (--themes-dir ~/...)
+ * but NOT in the equals-sign form (--themes-dir=~/...), so we handle
+ * both cases here.
+ */
+function expandTilde(p) {
+  if (p === '~' || p.startsWith('~/')) {
+    return path.join(os.homedir(), p.slice(1));
+  }
+  return p;
+}
+
+/**
+ * Parse CLI arguments into { slug, themesDir }.
+ * Supports:
+ *   node generate-previews.js
+ *   node generate-previews.js <slug>
+ *   node generate-previews.js [<slug>] --themes-dir <path>
+ *   node generate-previews.js [<slug>] --themes-dir=<path>
+ */
+function parseArgs(argv) {
+  const args = argv.slice(2);
+  let slug = undefined;
+  let themesDir = DEFAULT_THEMES_DIR;
+  for (let i = 0; i < args.length; i++) {
+    const a = args[i];
+    if (a === '--themes-dir') {
+      // Space-separated form: consume the next argument as the path
+      themesDir = path.resolve(expandTilde(args[++i]));
+    } else if (a.startsWith('--themes-dir=')) {
+      // Equals-sign form: extract the path after the '='
+      themesDir = path.resolve(expandTilde(a.slice('--themes-dir='.length)));
+    } else if (!a.startsWith('--')) {
+      // Positional argument: treat as the target slug
+      slug = a;
+    }
+  }
+  return { slug, themesDir };
+}
+
 const WIDTH = 800;
 const HEIGHT = 500;
 
@@ -362,8 +410,8 @@ function escapeHtml(str) {
   return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-async function generatePreview(browser, slug) {
-  const themeDir = path.join(THEMES_DIR, slug);
+async function generatePreview(browser, slug, themesDir) {
+  const themeDir = path.join(themesDir, slug);
   const manifestPath = path.join(themeDir, 'manifest.json');
 
   if (!fs.existsSync(manifestPath)) {
@@ -372,8 +420,8 @@ async function generatePreview(browser, slug) {
   }
 
   const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
-  const html = buildPreviewHTML(manifest, themeDir);
   const outputPath = path.join(themeDir, 'preview.png');
+  const html = buildPreviewHTML(manifest, themeDir);
 
   const page = await browser.newPage();
   await page.setViewportSize({ width: WIDTH, height: HEIGHT });
@@ -391,12 +439,19 @@ async function generatePreview(browser, slug) {
 }
 
 async function main() {
-  const targetSlug = process.argv[2]; // optional: generate for specific theme only
+  const { slug: targetSlug, themesDir } = parseArgs(process.argv);
+
+  // Validate the themes directory up front so callers get a clear error
+  // instead of a cryptic ENOENT stack trace from readdirSync.
+  if (!fs.existsSync(themesDir)) {
+    console.error(`themes-dir not found: ${themesDir}`);
+    process.exit(1);
+  }
 
   const slugs = targetSlug
     ? [targetSlug]
-    : fs.readdirSync(THEMES_DIR).filter(entry => {
-        const p = path.join(THEMES_DIR, entry);
+    : fs.readdirSync(themesDir).filter(entry => {
+        const p = path.join(themesDir, entry);
         return fs.statSync(p).isDirectory() && fs.existsSync(path.join(p, 'manifest.json'));
       });
 
@@ -406,7 +461,7 @@ async function main() {
   let generated = 0;
 
   for (const slug of slugs) {
-    const ok = await generatePreview(browser, slug);
+    const ok = await generatePreview(browser, slug, themesDir);
     if (ok) generated++;
   }
 

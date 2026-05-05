@@ -46,3 +46,15 @@ You can also publish directly from the app:
 2. Go to Settings → Themes → select your theme
 3. Click "Publish to Marketplace"
 4. The app will create the PR for you (requires `gh` CLI)
+
+## License & Submission Terms
+
+This repository is licensed under the **Apache License, Version 2.0** — see [LICENSE](./LICENSE).
+
+By opening a pull request to this repository, you certify that:
+
+1. **You wrote the theme yourself, or otherwise have the right to submit it.** Any third-party assets you include (wallpapers, images, fonts, icons) are either your original work, in the public domain, or licensed under terms that permit redistribution under Apache 2.0 — and any required attribution is included in your `manifest.json`.
+2. **You agree that your contribution is licensed under Apache 2.0**, the same terms as this repository, and that you grant the maintainers and downstream users the rights described in that license — including the right to redistribute your theme through the YouCoded app and registry.
+3. **Your contribution does not include malicious content** — no remote-loaded code, no obfuscated scripts, no tracking pixels, no attempts to exfiltrate user data. Themes are styling assets; they should not behave like applications.
+
+If you can't agree to all three, please don't submit. If you discover that a theme already in the registry violates someone's rights (yours or a third party's), see the takedown process in the main YouCoded [TERMS.md](https://github.com/itsdestin/youcoded/blob/master/TERMS.md).
